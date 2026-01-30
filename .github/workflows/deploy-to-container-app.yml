@@ -7,9 +7,9 @@ on:
 
 env:
   # TODO: Replace with your actual values
-  ACR_NAME: <acr-name>
-  RESOURCE_GROUP: <resource-group>
-  CONTAINER_APP_NAME: <container-app-name>
+  ACR_NAME: acrwytweqkslelsw
+  RESOURCE_GROUP: cloudlab-0d8-b82
+  CONTAINER_APP_NAME: app-wytweqkslelsw
   IMAGE_NAME: hello-world-node-app
 
 jobs:
@@ -46,4 +46,3 @@ jobs:
           
           # Image config
           imageToBuild: ${{ env.ACR_NAME }}.azurecr.io/${{ env.IMAGE_NAME }}:${{ github.sha }}
-          
